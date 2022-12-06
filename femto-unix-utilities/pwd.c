@@ -9,6 +9,7 @@ int main (int argc, char *argv[])
 	if(argc > 1)
 	{
 		printf("program should not take arguments\n");
+		exit(1);
 	}
 	char *pwd = (char *)malloc(sizeof(char)*MAX_PATH);
 	getcwd(pwd,MAX_PATH);
